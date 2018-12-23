@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
-
+	$('#menuTrigger').click(function(){
+		$('#popup__background').toggle();
+		$('.popup__menu').toggle();
+		$(this).toggleClass('active');
+	});
 
 
 });
