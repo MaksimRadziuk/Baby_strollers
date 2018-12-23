@@ -6,6 +6,11 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
+	$('#popup__background').click(function(){
+		$('.popup').hide();
+		$('#menuTrigger').toggleClass('active');
+	});
+
 
 });
 
@@ -33,7 +38,12 @@ $(window).on("load", function() {
 		items:6,
 		autoplay:true,
 		smartSpeed:4000,
-		autoplayTimeout:3500
+		autoplayTimeout:3500,
+		responsive : {
+		    1320 : {
+		        items:5
+		    }
+		}
 	});
 
 	$(".new__slider-wrap").owlCarousel({

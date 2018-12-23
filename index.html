@@ -26,8 +26,8 @@
 
 <body>
 
-<div id="popup__background"></div>
-<div class="popup__menu">
+<div class="popup" id="popup__background"></div>
+<div class="popup popup__menu">
 	<div class="container h-100">
 		<div class="row h-100">
 			<ul class="col-sm-3 popup__menu-list">
@@ -2954,6 +2954,26 @@
 		</div>
 	</div>
 </div>
+<div class="popup" id="mailToUs">
+	<div class="popup__close-btn"></div>
+	<div class="popup__header align-items-center">
+		<h2>Возникли вопросы? Напишите нам</h2>
+	</div>
+	<div class="popup__body">
+		<div class="popup__body-title">Мы постараемся как можно быстрее ответить на ваше письмо</div>
+		<form>
+			<input type="text" placeholder="Ваше имя">
+			<input type="email" placeholder="Адрес эл. почты">
+			<textarea  placeholder="Сообщение"></textarea>
+			<div class="popup__body-checkbox">
+				<input type="checkbox" id="agreement1" hidden>
+				<label for="agreement1">Я согласен с <a href="#">политикой</a> обработки персональных данных</label>
+			</div>
+			<button>отправить</button>
+		</form>
+	</div>
+	<p>You are awesome.</p>
+</div>
 
 <header>
 	<div class="container header__container">
@@ -3520,7 +3540,7 @@
 				<div class="footer__mail-link">
 					<a href="#">info@eurobabyshop.ru</a>
 					<span> или </span>
-					<span class="footer__mail-trigger">Напишите нам</span>
+					<span data-fancybox data-src="#mailToUs" href="javascript:;" class="footer__mail-trigger">Напишите нам</span>
 				</div>
 			</div>
 			<div class="col-sm-12 footer__copyright">

@@ -46,6 +46,16 @@ input[type='text']:focus::-moz-placeholder          {color:transparent;}/* Firef
 input[type='text']:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
 input[type='text']:focus:-ms-input-placeholder      {color:transparent;}
 
+input[type='email']:focus::-webkit-input-placeholder {color:transparent;}
+input[type='email']:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+input[type='email']:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+input[type='email']:focus:-ms-input-placeholder      {color:transparent;}
+
+textarea:focus::-webkit-input-placeholder {color:transparent;}
+textarea:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
+textarea:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
+textarea:focus:-ms-input-placeholder      {color:transparent;}
+
 ul:focus {
 	outline: none;
 }
@@ -276,6 +286,95 @@ header {
   bottom: 0;
   z-index: 1100;
   display: none;
+}
+
+#mailToUs {
+  display: none;
+  width: 650px;
+  background-color: #fff;
+}
+.popup__header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  text-align:center;
+  background-color: #f7f4f1;
+}
+.popup__header h2 {
+  font-size: 21px;
+  color: #3c3f48;
+  text-align: center;
+  width: 100%;
+}
+.fancybox-content {
+  padding: 0;
+}
+.popup__body {
+  width: 100%;
+  padding: 0 80px;
+}
+.popup__body-title {
+  font-size: 15px;
+  color: #3c3f48;
+  width: 350px;
+  text-align: center;
+  margin: 30px auto;
+}
+.popup__body form,
+.popup__body form input,
+.popup__body form textarea {
+  width: 100%;
+}
+.popup__body form input,
+.popup__body form textarea {
+  border:none;
+  border-bottom: 1px solid #c4c5c8;
+  font-size: 17px;
+  color: #3c3f48;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.popup__body-checkbox {
+  width: 100%;
+  height: auto;
+}
+.popup__body-checkbox>label {
+  width: 100%;
+  padding-left: 50px;
+  font-size: 15px;
+  color: #3c3f48;
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.popup__body-checkbox>label>a {
+  color: #cf9c96;
+}
+.popup__body-checkbox>label:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border:2px solid #c4c5c8;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+.popup__body-checkbox>input:checked + label:before {
+  background:url(../img/checkbox-checked.png) center center no-repeat;
+}
+.popup__body form button {
+  display: block;
+  width: 205px;
+  height: 50px;
+  background-color: #cf9c96;
+  color: #fff;
+  border:none;
+  box-shadow: none;
+  margin: 40px auto;
+  font-size: 18px;
+  text-transform:uppercase;
 }
 
 /* ===============СТИЛИ МЕНЮ================= */
@@ -525,4 +624,10 @@ footer {
 .footer__payment-list img {
   margin-left: 15px;
   opacity: .5;
+}
+
+@media all and (max-width: 1320px) {
+  .container {
+    max-width: 1040px;
+  }
 }
