@@ -24,7 +24,7 @@ a[href^=tel] {
 ul {
  list-style: none;
 }
-/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
 -webkit-appearance: none;
 margin: 0;
@@ -40,7 +40,7 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
 -webkit-appearance: none;
 margin: 0;
-} */
+}
 input[type='text']:focus::-webkit-input-placeholder {color:transparent;}
 input[type='text']:focus::-moz-placeholder          {color:transparent;}/* Firefox 19+ */
 input[type='text']:focus:-moz-placeholder           {color:transparent;}/* Firefox 18- */
@@ -221,9 +221,14 @@ header {
   color:#3c3f48; /*deep blue*/
   font-size: 14px;
 }
-.nav__list-items>a>i {
+.nav__list-items>a>span {
   padding-left: 5px;
-  font-size: 12px;
+}
+.nav__list-items>a>span>img {
+  width: 5px;
+  height: 10px;
+  transform: rotateZ(90deg);
+  background:url(../img/arrow_dark.png) 100% center center no-repeat;
 }
 .header__navbar-search {
   padding-right: 0;
