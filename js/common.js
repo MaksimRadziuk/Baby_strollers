@@ -13,6 +13,20 @@ $(document).ready(function(){
 
 	$(".js-range-slider").ionRangeSlider();
 
+	var priceFromScale = $('.irs-from').text();
+	var priceToScale = $('.irs-to').text();
+	$('#priceFrom').val(priceFromScale);
+	$('#priceTo').val(priceToScale);
+
+	$('.irs-from').bind("DOMSubtreeModified",function(){
+	    var priceFromScale = $('.irs-from').text();
+	    $('#priceFrom').val(priceFromScale);
+	});
+	$('.irs-from').bind("DOMSubtreeModified",function(){
+	    var priceToScale = $('.irs-to').text();
+	    $('#priceTo').val(priceToScale);
+	});
+
 });
 
 $(window).on("load", function() {

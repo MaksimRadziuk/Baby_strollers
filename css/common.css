@@ -695,12 +695,6 @@ footer {
   opacity: .5;
 }
 
-@media all and (max-width: 1320px) {
-  .container {
-    max-width: 1040px;
-  }
-}
-
 /* ==============СТИЛИ ХЛЕБНЫХ КРОШЕК=============== */
 section.breadcrumbs__section {
   width: 100%;
@@ -742,4 +736,19 @@ section.breadcrumbs__section {
   background-repeat: no-repeat;
   background-image: url(../img/arrow_dark.png);
   margin-right: 11px;
+}
+
+
+@media all and (max-width: 1320px) {
+  .container {
+    max-width: 1040px;
+  }
+  .footer__mail-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__mail-trigger {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

@@ -137,10 +137,13 @@ section.categories h1 {
   justify-content: space-between;
 }
 .price__input-wrap>input {
-  width: 125px;
+  width: 50%;
+  max-width: 125px;
+  min-width: 70px;
   border:1px solid #e9e6e2;
   color: #3c3f48;
   padding-left: 15px;
+  font-size: 15px;
 }
 .price__input-wrap>span {
   font-size: 18px;
@@ -154,14 +157,14 @@ section.categories h1 {
   overflow-y: auto;
 }
 .brands__input-wrap::-webkit-scrollbar {
-  width:6px;
+  width:4px;
   background-color: transparent;
 } 
 .brands__input-wrap::-webkit-scrollbar-button {
   display: none;
 }
 .brands__input-wrap::-webkit-scrollbar-track {
-  width: 4px;
+  width: 2px;
   background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(left, #ffffff 0%, #fffcfc 25%, #f7f4f1 25.1%, #f7f4f1 74.9%, #fffcfc 75%, #ffffff 100%);
 background: -webkit-linear-gradient(left, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4f1 74.9%,#fffcfc 75%,#ffffff 100%);
@@ -171,7 +174,7 @@ background: linear-gradient(to right, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4
   border: none;
   box-shadow: none;
   background-color: #e3a69f;
-  width: 6px;
+  width: 4px;
 }
 .brands__input-item {
   width: 100%;
