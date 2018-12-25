@@ -11,6 +11,7 @@ $(document).ready(function(){
 		$('#menuTrigger').toggleClass('active');
 	});
 
+	$(".js-range-slider").ionRangeSlider();
 
 });
 
