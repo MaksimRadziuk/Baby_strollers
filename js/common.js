@@ -27,6 +27,34 @@ $(document).ready(function(){
 	    $('#priceTo').val(priceToScale);
 	});
 
+	var docscroll=$(document).scrollTop();
+	if(docscroll>90){
+    	$('header').addClass('fixed');
+    	$('#toTop').addClass('active');
+    	$('.popup__menu').addClass('fixed');
+	}else{
+    	$('header').removeClass('fixed');
+    	$('#toTop').removeClass('active');
+    	$('.popup__menu').removeClass('fixed');
+	}
+
+	$(window).scroll(function(){
+		var docscroll=$(document).scrollTop();
+		if(docscroll>90){
+	    	$('header').addClass('fixed');
+	    	$('#toTop').addClass('active');
+	    	$('.popup__menu').addClass('fixed');
+		}else{
+	    	$('header').removeClass('fixed');
+	    	$('#toTop').removeClass('active');
+	    	$('.popup__menu').removeClass('fixed');
+		}
+	});
+
+	$('#toTop').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+	});
+
 });
 
 $(window).on("load", function() {

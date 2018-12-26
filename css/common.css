@@ -73,14 +73,32 @@ header {
 .navbar-brand {
 	font-size: 0
 }
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  background-color: #fff;
+  height: 55px;
+}
+header.fixed .header__container-navbar:first-child {
+  height: 0;
+  opacity: 0;
+}
+header.fixed ~ section.breadcrumbs__section {
+  margin-top: 145px;
+}
 .header__container-navbar {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+  position: relative;
 }
 .header__container-navbar:first-child {
 	height: 90px;
 	border-bottom: 1px solid #e9e6e2;
+  padding-right: 230px;
 }
 .header__logo-name {
 	display: block;
@@ -127,8 +145,18 @@ header {
 	left: -25px;
 	top: 4px;
 }
+
+header.fixed .header__navbar-cart {
+  position: relative;
+  top: auto;
+  right: auto;
+}
 .header__navbar-cart {
 	display: flex;
+  position: absolute;
+  z-index: 1100;
+  top: -80px;
+  right: 0;
 }
 .header__cart-icon {
 	position: relative;
@@ -232,6 +260,13 @@ header {
 }
 .header__navbar-search {
   padding-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header.fixed .header__navbar-search>form {
+  width: 60%;
 }
 .header__navbar-search>form {
   width: 100%;
@@ -280,6 +315,40 @@ header {
 }
 
 /* ===================СТИЛИ ПОПАП=============== */
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  width: 40px;
+  height: 40px;
+  border:2px solid #e59f97;
+  cursor: pointer;
+  border-radius: 50%;
+  background-image: url(../img/totop_bcg.png);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1100;
+  display: none;
+}
+#toTop:hover {
+  animation: blink .4s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#toTop.active {
+  display: block;
+}
+
 #popup__background {
   width: 100%;
   height: 100%;
@@ -392,6 +461,11 @@ header {
   z-index: 1110;
   border-top: 1px solid #dfdfdf;
   display: none;
+}
+.popup__menu.fixed {
+  position: fixed;
+  top: 55px;
+  left: 0;
 }
 .popup__menu .row {
   position: relative;
