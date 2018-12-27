@@ -486,8 +486,9 @@ header.fixed .header__navbar-search>form {
 }
 .popup__menu-item a {
   color: #3c3f48;
+  font-weight: 400;
 }
-.popup__menu-item:hover>a {
+.popup__menu-item>a.maintainHover {
   font-weight: 600;
 }
 .popup__menu-item>span {
@@ -497,7 +498,7 @@ header.fixed .header__navbar-search>form {
   background:url(../img/arrow_dark.png) center center no-repeat;
   margin-top: 19px;
 }
-.popup__menu-item:hover>.popup__submenu-list {
+.popup__menu-item>a.maintainHover ~ .popup__submenu-list {
   display: block;
 }
 .popup__submenu-list {
@@ -519,7 +520,7 @@ header.fixed .header__navbar-search>form {
   padding-right: 30px;
   cursor: pointer;
 }
-.popup__submenu-item:hover>a {
+.popup__submenu-item.active>a {
   font-weight: 600;
 }
 .popup__submenu-item>span {
@@ -538,7 +539,7 @@ header.fixed .header__navbar-search>form {
   width: 200%;
   display: none;
 }
-.popup__submenu-item:hover>.popup__company-box {
+.popup__submenu-item.active>.popup__company-box {
   display: block;
 }
 .popup__company-links {

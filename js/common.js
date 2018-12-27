@@ -55,6 +55,84 @@ $(document).ready(function(){
 		$('body,html').animate({scrollTop:0},800);
 	});
 
+
+//AIMMENU
+
+	/*$('.popup__menu-item').menuAim({
+		activate: function() {
+			$(this).addClass('maintainHover');
+		},
+		deactivate: function() {
+			$(this).removeClass('maintainHover');
+		}
+	});
+
+	$('.popup__submenu-item').menuAim();*/
+
+	/*$(".popup__menu-item").mouseover(function(){
+		$(this).addClass('maintainHover');
+	});
+	$(".popup__menu-item").mouseleave(function(){
+		$(this).removeClass('maintainHover');
+	});
+
+	
+
+	$('.popup__menu-item').mousemove(function(e){
+	    // положение элемента
+	    var pos = $(this).offset();
+	    var elem_left = pos.left;
+	    var elem_top = pos.top;
+	    // положение курсора внутри элемента
+	    var Xinner = e.pageX - elem_left;
+	    var Yinner = e.pageY - elem_top;
+	    alert("X: " + Xinner + " Y: " + Yinner); // вывод результата в консоль
+	});*/
+
+	$(".popup__submenu-item").mouseover(function(){
+		$(this).addClass('active');
+	});
+	$(".popup__submenu-item").mouseleave(function(){
+		$(this).removeClass('active');
+	});
+
+
+	var $menu = $(".popup__menu-list");
+    $menu.menuAim({
+        activate: activateSubmenu,
+        deactivate: deactivateSubmenu
+    });
+    function activateSubmenu(row) {
+        var $row = $(row),
+            submenuId = $row.data("submenuId"),
+            $submenu = $("#" + submenuId),
+            height = $menu.outerHeight(),
+            width = $menu.outerWidth();
+        $submenu.css({
+            display: "block"
+        });
+        $row.find("a").addClass("maintainHover");
+    }
+
+    function deactivateSubmenu(row) {
+        var $row = $(row),
+            submenuId = $row.data("submenuId"),
+            $submenu = $("#" + submenuId);
+        $submenu.css("display", "none");
+        $row.find("a").removeClass("maintainHover");
+    }
+    $(".popup__menu-list>li").click(function(e) {
+        e.stopPropagation();
+    });
+
+    $(document).click(function() {
+        $(".popup__submenu-list").css("display", "none");
+        $("a.maintainHover").removeClass("maintainHover");
+    });
+
+
+
+
 });
 
 $(window).on("load", function() {
