@@ -21,7 +21,7 @@
 
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/basket.css">
+	<link rel="stylesheet" href="css/error.css">
 
 </head>
 
@@ -3053,256 +3053,118 @@
 			<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb breadcrumb__box h-100">
 			    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-			    <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+			    <li class="breadcrumb-item active" aria-current="page">Ошибка</li>
 			  </ol>
 			</nav>
 		</div>
 	</div>
 </section>
 
-<section class="basket">
+<section class="error">
 	<div class="container">
 		<div class="row">
-			<h1>Корзина</h1>
-			<div class="col-sm-12">
+			<div class="error__img-wrap">
+				<img src="img/bcg_404.png" alt="">
+				<span>Такой страницы не существует</span>
+			</div>
+			<div class="col-sm-6 error__description-wrap">
 				<div class="row">
-					<ul class="busket__tabs-row">
-						<li class="busket__tabs-item first active"><span>1</span>Проверить заказ</li>
-						<li class="busket__tabs-item second"><span>2</span>Контакты</li>
-						<li class="busket__tabs-item third"><span>3</span>Доставка и оплата</li>
-						<li class="busket__tabs-item fourth"><span>4</span>Завершение оформления</li>
-						<li class="busket__postponed-link">
-							<a href="#"><span><img src="img/clock_icon.png" alt=""></span>Отложенные</a>
-						</li>
-					</ul>
-					<div class="busket__content-row">
-						<div class="row">
-							<div id="menu0" class="col-sm-12 tab__content-item active">
-							    <div class="col-sm-9 tab__part-content">
-							    	<table>
-							    		<thead>
-							    			<tr>
-							    				<th colspan="2">Наименование</th>
-							    				<th>Стоимость</th>
-							    				<th>Количество</th>
-							    				<th>Сумма</th>
-							    				<th></th>
-							    			</tr>
-							    		</thead>
-							    		<tbody>
-							    			<tr>
-							    				<td class="table__cell-img"><img src="img/table1.jpg" alt=""></td>
-							    				<td class="table__cell-description">
-							    					<div class="cell__desription-name">Коляска 3 в 1 Cortina X3 Tris Evolution</div>
-							    					<div class="cell__desription-index">Артикул <span>4905-108080344</span></div>
-							    					<div class="cell__desription-select">
-						    							<div class="select-item"></div>
-						    							<select>
-						    								<option>Lavastone Black</option>
-						    								<option>Lavastone Blue</option>
-						    								<option>Lavastone Red</option>
-						    							</select>
-							    					</div>
-							    				</td>
-							    				<td class="table__cell-price">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-amount">
-							    					<form>
-							    						<span class="minus">-</span>
-							    						<input value="1" type="number" disabled>
-							    						<span class="plus">+</span>
-							    					</form>
-							    				</td>
-							    				<td class="table__cell-totalPrice">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-delete">
-							    					<span><img src="img/trashbin_icon.png" alt=""></span>
-							    				</td>
-							    			</tr>
-							    			<tr>
-							    				<td class="table__cell-img"><img src="img/table2.jpg" alt=""></td>
-							    				<td class="table__cell-description">
-							    					<div class="cell__desription-name">Коляска 3 в 1 Cortina X3 Tris Evolution</div>
-							    					<div class="cell__desription-index">Артикул <span>4905-108080344</span></div>
-							    					<div class="cell__desription-select">
-						    							<div class="select-item"></div>
-						    							<select>
-						    								<option>Lavastone Black</option>
-						    								<option>Lavastone Blue</option>
-						    								<option>Lavastone Red</option>
-						    							</select>
-							    					</div>
-							    				</td>
-							    				<td class="table__cell-price">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-amount">
-							    					<form>
-							    						<span class="minus">-</span>
-							    						<input value="1" type="number" disabled>
-							    						<span class="plus">+</span>
-							    					</form>
-							    				</td>
-							    				<td class="table__cell-totalPrice">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-delete">
-							    					<span><img src="img/trashbin_icon.png" alt=""></span>
-							    				</td>
-							    			</tr>
-							    			<tr>
-							    				<td class="table__cell-img"><img src="img/table3.jpg" alt=""></td>
-							    				<td class="table__cell-description">
-							    					<div class="cell__desription-name">Коляска 3 в 1 Cortina X3 Tris Evolution</div>
-							    					<div class="cell__desription-index">Артикул <span>4905-108080344</span></div>
-							    					<div class="cell__desription-select">
-						    							<div class="select-item"></div>
-						    							<select>
-						    								<option>Lavastone Black</option>
-						    								<option>Lavastone Blue</option>
-						    								<option>Lavastone Red</option>
-						    							</select>
-							    					</div>
-							    				</td>
-							    				<td class="table__cell-price">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-amount">
-							    					<form>
-							    						<span class="minus">-</span>
-							    						<input value="1" type="number" disabled>
-							    						<span class="plus">+</span>
-							    					</form>
-							    				</td>
-							    				<td class="table__cell-totalPrice">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-delete">
-							    					<span><img src="img/trashbin_icon.png" alt=""></span>
-							    				</td>
-							    			</tr>
-							    			<tr>
-							    				<td class="table__cell-img"><img src="img/table1.jpg" alt=""></td>
-							    				<td class="table__cell-description">
-							    					<div class="cell__desription-name">Коляска 3 в 1 Cortina X3 Tris Evolution</div>
-							    					<div class="cell__desription-index">Артикул <span>4905-108080344</span></div>
-							    					<div class="cell__desription-select">
-						    							<div class="select-item"></div>
-						    							<select>
-						    								<option>Lavastone Black</option>
-						    								<option>Lavastone Blue</option>
-						    								<option>Lavastone Red</option>
-						    							</select>
-							    					</div>
-							    				</td>
-							    				<td class="table__cell-price">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-amount">
-							    					<form>
-							    						<span class="minus">-</span>
-							    						<input value="1" type="number" disabled>
-							    						<span class="plus">+</span>
-							    					</form>
-							    				</td>
-							    				<td class="table__cell-totalPrice">
-							    					<span>52400</span> руб.
-							    				</td>
-							    				<td class="table__cell-delete">
-							    					<span><img src="img/trashbin_icon.png" alt=""></span>
-							    				</td>
-							    			</tr>
-							    		</tbody>
-							    	</table>
-							    </div>
-							    <div class="col-sm-3 tab__part-description">
-							    	<div class="tab__description-wrap">
-							    		<p class="title">Сумма заказа</p>
-							    		<p class="sum"><span>258 800</span> руб.</p>
-										<p>Доставка: <span>бесплатно</span></p>
-										<p>При заказе от 10 000 руб., доставка бесплатно</p>
-										<div id="busketTrigger1" class="busket__tab-trigger">оформить заказ</div>
-							    	</div>
-							    </div>
-							</div>
-							<div id="menu1" class="col-sm-12 tab__content-item">
-							    <div class="col-sm-6 tab__part-content">
-							    	<h4>Контактная информация</h4>
-							    	<form>
-							    		<p class="title">Ваше имя:</p>
-							    		<input type="text" placeholder="Имя">
-							    		<p class="title">Ваш email:</p>
-							    		<input type="email" placeholder="Email">
-							    		<p class="title">Коментарий:</p>
-							    		<textarea placeholder="Коментарий"></textarea>
-							    		<div class="contacts__checkbox-wrap">
-							    			<input type="checkbox" id="agreement2" hidden>
-							    			<label for="agreement2">Я согласен с <a href="#">политикой</a> обработки персональных данных</label>
-							    		</div>
-							    		<div id="busketTrigger2" class="busket__tab-trigger">Продолжить оформление заказа</div>
-							    	</form>
-							    </div>
-							</div>
-							<div id="menu2" class="col-sm-12 tab__content-item">
-							    <div class="col-sm-6 tab__part-content">
-							    	<h4>Способы доставки</h4>
-							    	<form>
-							    		<p>Ваш город:</p>
-							    		<input type="text" placeholder="Москва">
-							    		<div class="tab__radio-wrap">
-							    			<input type="radio" name="delivery" id="self" hidden checked>
-							    			<label for="self" class="deliveryInput">Самовывоз</label>
-							    			<input type="radio" name="delivery" id="moscowDelivery" hidden>
-							    			<label for="moscowDelivery" class="deliveryInput">Доставка по Москве</label>
-							    			<div class="delivery__input-wrap">
-								    			<p>Адрес доставки:</p>
-								    			<input type="text" placeholder="Ваш адрес">
-								    		</div>
-							    		</div>
-							    		
-							    	</form>
-							    	<h4>Способы оплаты</h4>
-							    	<form>
-							    		<div class="tab__radio-wrap">
-							    			<input type="radio" name="payMethod" id="cashPay" hidden checked>
-							    			<label for="cashPay">Наличными при получении товара</label>
-							    			<input type="radio" name="payMethod" id="onlinePay" hidden>
-							    			<label for="onlinePay">Онлайн оплата Visa, MasterCard, МИР</label>
-							    			<input type="radio" name="payMethod" id="cardPay" hidden>
-							    			<label for="cardPay">Картой при получении (Visa, MasterCard, Maestro, МИР)</label>
-							    			<input type="radio" name="payMethod" id="countPay" hidden>
-							    			<label for="countPay">Безналичная оплата (по счету)</label>
-							    		</div>
-							    		<div id="busketTrigger3" class="busket__tab-trigger">оформить заказ</div>
-							    	</form>
-							    </div>
-							</div>
-							<div id="menu3" class="col-sm-12 tab__content-item">
-							    <div class="col-sm-6 tab__part-content">
-									<h4>Ваш заказ принят!</h4>
-									<div class="order__complete-row">
-										<div class="title">Номер заказа:</div>
-										<div class="sum">4587512</div>
-									</div>
-									<div class="order__complete-row">
-										<div class="title">Сумма заказа:</div>
-										<div class="sum"><span>258 800</span> руб.</div>
-									</div>
-									<div class="order__complete-row">
-										<div class="title">Доставка:</div>
-										<div class="sum">Москва, ул. Железнодорожников 35, кв. 45</div>
-									</div>
-									<div class="order__complete-row last">
-										<div class="title">Оплата:</div>
-										<div class="sum">Наличными при получении товара</div>
-									</div>
-									<a href="#" class="moveToCatalog">вернуться в каталог</a>
-								</div>
-							</div>
-						</div>
-						
+					<p>К сожалению, по вашему запросу ничего не найдено</p>
+					<p class="title">Вы можете:</p>
+					<p class="subtitle">Изменить параметры поиска:</p>
+					<input type="text" placeholder="Поиск по сайту">
+					<p class="subtitle">Найти интересующий вас продукт в каталоге самостоятельно:</p>
+					<a href="catalog.html" class="moveToCatalog">Перейти в каталог</a>
+					<div class="error__links-wrap">
+						<a href="tel:+74951208043">Позвонить</a>
+						<span>или</span>
+						<a href="mailto:info@eurobabyshop.ru">написать</a>
+						<span>нам</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="popular">
+	<div class="container">
+		<div class="row">
+			<h2 class="popular__title">Возможно вас заинтересуют:</h2>
+			<div class="popular__slider-wrap">
+				<div class="card">
+					<div class="card__action">35%</div>
+					<img src="img/popular_umbrella.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Зонт для колясок Esspero Parasol</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__action">12%</div>
+					<img src="img/popular_stroller-1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Прогулочная коляска Peg Perego Book Cross</h5>
+					    <p class="card-price"><span class="card__price-actual">32 000 р.</span><span class="card__price-prev"></span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__action">20%</div>
+					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
+					    <p class="card-price"><span class="card__price-actual">19 350 р.</span><span class="card__price-prev">25 000 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_carseat.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Автокресло Concord Transformer XT Pro</h5>
+					    <p class="card-price"><span class="card__price-actual">23 430 р.</span><span class="card__price-prev"></span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_stroller-1.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Прогулочная коляска Peg Perego Book Cross</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_carseat.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Автокресло Concord Transformer XT Pro</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
+					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
+					    <button>в корзину</button>
 					</div>
 				</div>
 			</div>
@@ -3400,7 +3262,7 @@
 <script src="libs/aimmenu/jquery.menu-aim.js"></script>
 
 <script src="js/common.js"></script>
-<script src="js/basket.js"></script>
+<script src="js/error.js"></script>
 
 </body>
 </html>
