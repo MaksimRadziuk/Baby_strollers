@@ -520,7 +520,7 @@ header.fixed .header__navbar-search>form {
   padding-right: 30px;
   cursor: pointer;
 }
-.popup__submenu-item.active>a {
+.popup__submenu-item>a.maintain {
   font-weight: 600;
 }
 .popup__submenu-item>span {
@@ -539,7 +539,7 @@ header.fixed .header__navbar-search>form {
   width: 200%;
   display: none;
 }
-.popup__submenu-item.active>.popup__company-box {
+.popup__submenu-item>a.maintain ~ .popup__company-box {
   display: block;
 }
 .popup__company-links {

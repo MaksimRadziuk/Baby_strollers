@@ -58,12 +58,12 @@ $(document).ready(function(){
 
 //AIMMENU
 
-	$(".popup__submenu-item").mouseover(function(){
+	/*$(".popup__submenu-item").mouseover(function(){
 		$(this).addClass('active');
 	});
 	$(".popup__submenu-item").mouseleave(function(){
 		$(this).removeClass('active');
-	});
+	});*/
 
 
 	var $menu = $(".popup__menu-list");
@@ -80,7 +80,7 @@ $(document).ready(function(){
         $submenu.css({
             display: "block"
         });
-        $row.find("a").addClass("maintainHover");
+        $row.find("a.popup__menu-itemLink").addClass("maintainHover");
     }
 
     function deactivateSubmenu(row) {
@@ -88,7 +88,7 @@ $(document).ready(function(){
             submenuId = $row.data("submenuId"),
             $submenu = $("#" + submenuId);
         $submenu.css("display", "none");
-        $row.find("a").removeClass("maintainHover");
+        $row.find("a.popup__menu-itemLink").removeClass("maintainHover");
     }
     $(".popup__menu-list>li").click(function(e) {
         e.stopPropagation();
@@ -96,7 +96,41 @@ $(document).ready(function(){
 
     $(document).click(function() {
         $(".popup__submenu-list").css("display", "none");
-        $("a.maintainHover").removeClass("maintainHover");
+        $("a.popup__menu-itemLink.maintainHover").removeClass("maintainHover");
+    });
+
+
+    var $submenu = $(".popup__submenu-list");
+    $submenu.menuAim({
+        activate: activateSubsubmenu,
+        deactivate: deactivateSubsubmenu
+    });
+    function activateSubsubmenu(row) {
+        var $row = $(row),
+            subsubmenuId = $row.data("subsubmenuId"),
+            $subsubmenu = $("#" + subsubmenuId),
+            height = $submenu.outerHeight(),
+            width = $submenu.outerWidth();
+        $subsubmenu.css({
+            display: "block"
+        });
+        $row.find("a.popup__submenu-itemLink").addClass("maintain");
+    }
+
+    function deactivateSubsubmenu(row) {
+        var $row = $(row),
+            subsubmenuId = $row.data("subsubmenuId"),
+            $subsubmenu = $("#" + subsubmenuId);
+        $subsubmenu.css("display", "none");
+        $row.find("a.popup__submenu-itemLink").removeClass("maintain");
+    }
+    $(".popup__submenu-list>li").click(function(e) {
+        e.stopPropagation();
+    });
+
+    $(document).click(function() {
+        $(".popup__company-box").css("display", "none");
+        $("a.popup__submenu-itemLink.maintain").removeClass("maintain");
     });
 
 
