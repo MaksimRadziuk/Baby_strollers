@@ -166,9 +166,9 @@ section.categories h1 {
 .brands__input-wrap::-webkit-scrollbar-track {
   width: 2px;
   background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left, #ffffff 0%, #fffcfc 25%, #f7f4f1 25.1%, #f7f4f1 74.9%, #fffcfc 75%, #ffffff 100%);
-background: -webkit-linear-gradient(left, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4f1 74.9%,#fffcfc 75%,#ffffff 100%);
-background: linear-gradient(to right, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4f1 74.9%,#fffcfc 75%,#ffffff 100%);
+  background: -moz-linear-gradient(left, #ffffff 0%, #fffcfc 25%, #f7f4f1 25.1%, #f7f4f1 74.9%, #fffcfc 75%, #ffffff 100%);
+  background: -webkit-linear-gradient(left, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4f1 74.9%,#fffcfc 75%,#ffffff 100%);
+  background: linear-gradient(to right, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4f1 74.9%,#fffcfc 75%,#ffffff 100%);
 }
 .brands__input-wrap::-webkit-scrollbar-thumb {
   border: none;
@@ -342,6 +342,7 @@ background: linear-gradient(to right, #ffffff 0%,#fffcfc 25%,#f7f4f1 25.1%,#f7f4
   position: absolute;
   top: 50px;
   left: 0;
+  z-index: 10;
   transform: translateX(-35%);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(200,200,200,0.5);
   -moz-box-shadow: 0px 3px 5px 0px rgba(200,200,200,0.5);
