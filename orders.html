@@ -21,7 +21,7 @@
 
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/error.css">
+	<link rel="stylesheet" href="css/orders.css">
 
 </head>
 
@@ -2992,12 +2992,11 @@
 				<div class="card__description-title">Прогулочная коляска Peg Perego Book Completo</div>
 				<div class="card__description-cost"><span>29 750</span> руб.</div>
 				<div class="card__description-links">
-					<a href="basket.html" class="card__links-toBasket">перейти в корзину</a>
+					<a href="#" class="card__links-toBasket">перейти в корзину</a>
 					<a href="#" class="card__link-continue">продолжить просмотр</a>
 				</div>
 			</div>
 		</div>
-		<p class="addToBasket__slider-title">Сопустствующие товары</p>
 		<div class="popup__addToBasket-slider">
 			<div class="card">
 					<div class="card__action">35%</div>
@@ -3153,118 +3152,189 @@
 			<nav aria-label="breadcrumb">
 			  <ol class="breadcrumb breadcrumb__box h-100">
 			    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-			    <li class="breadcrumb-item active" aria-current="page">Ошибка</li>
+			    <li class="breadcrumb-item"><a href="index.html">Личный кабинет</a></li>
+			    <li class="breadcrumb-item active" aria-current="page">Мои заказы</li>
 			  </ol>
 			</nav>
 		</div>
 	</div>
 </section>
 
-<section class="error">
+<section class="personalCabinet">
 	<div class="container">
 		<div class="row">
-			<div class="error__img-wrap">
-				<img src="img/bcg_404.png" alt="">
-				<span>Такой страницы не существует</span>
-			</div>
-			<div class="col-sm-6 error__description-wrap">
+			<div class="col-sm-12 personalCabinet__title-row">
 				<div class="row">
-					<p>К сожалению, по вашему запросу ничего не найдено</p>
-					<p class="title">Вы можете:</p>
-					<p class="subtitle">Изменить параметры поиска:</p>
-					<input type="text" placeholder="Поиск по сайту">
-					<p class="subtitle">Найти интересующий вас продукт в каталоге самостоятельно:</p>
-					<a href="catalog.html" class="moveToCatalog">Перейти в каталог</a>
-					<div class="error__links-wrap">
-						<a href="tel:+74951208043">Позвонить</a>
-						<span>или</span>
-						<a href="mailto:info@eurobabyshop.ru">написать</a>
-						<span>нам</span>
-					</div>
+					<h1>Мои заказы</h1>
+					<p class="personalCabinet__greetings-wrap">
+						<span>Здравствуйте, </span>
+						<span class="personalCabinet__greetings-name">Рафаэль</span>
+					</p>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section class="popular">
-	<div class="container">
-		<div class="row">
-			<h2 class="popular__title">Возможно вас заинтересуют:</h2>
-			<div class="popular__slider-wrap">
-				<div class="card">
-					<div class="card__action">35%</div>
-					<img src="img/popular_umbrella.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Зонт для колясок Esspero Parasol</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+			<div class="col-sm-3 personalCabinet__sidebar">
+				<ul class="nav nav-pills">
+					<li><a class="active" data-toggle="pill" href="#myOrders">Мои заказы</a><span></span></li>
+					<li><a data-toggle="pill" href="#favorites">Избранное</a><span></span></li>
+					<li><a data-toggle="pill" href="#myData">Мои данные</a><span></span></li>
+					<li><a data-toggle="pill" href="#subscribes">Подписки</a><span></span></li>
+					<li><a data-toggle="pill" href="#faq">Отзывы и вопросы</a><span></span></li>
+					<li><a data-toggle="pill" href="#relyProgramm">Программа лояльности</a><span></span></li>
+					<li><a data-toggle="pill" href="#revoPlus">Оплата частями Ревоплюс</a><span></span></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 personalCabinet__main">
+				<div class="tab-content">
+					<div id="myOrders" class="tab-pane fade in active show">
+					    <ul class="nav nav-tabs myorders__tabs-wrap">
+					    	<li><a data-toggle='tab' href="#currentOrders">Текущие заказы (<span>0</span>)</a></li>
+					    	<li><a class="active" data-toggle='tab' href="#allOrders">Все заказы (<span>45</span>)</a></li>
+					    </ul>
+					    <div class="tab-content">
+					    	<div id="currentOrders" class="tab-pane fade">
+					    		
+					    	</div>
+					    	<div id="allOrders" class="tab-pane fade in active show">
+								<div class="myorders__content-item">
+									<div class="myorders__item-topRow">
+										<span class="item__topRow-index">Nr. RU181126-984822</span>
+										<span class="item__topRow-sum"><span>10 730</span> руб.</span>
+										<span class="item__topRow-date">26 ноября 2018</span>
+										<span class="item__topRow-status delivered">доставлен</span>
+									</div>
+									<div class="myorders__item-seller">
+										<span>Продавец - <span>Lamoda</span></span>
+									</div>
+									<div class="myorders__item-bottomRow">
+										<div class="item__bottomRow-wrap">
+											<span><img src="img/popular_carseat.jpg" alt=""></span>
+											<span><img src="img/popular_feedingtable.jpg" alt=""></span>
+											<span><img src="img/popular_umbrella.jpg" alt=""></span>
+											<span><img src="img/popular_stroller-1.jpg" alt=""></span>
+											<span class="overLimit">+ 5</span>
+										</div>
+										<a href="#" class="myorders__btn-moreinfo">подробнее о заказе</a>
+									</div>
+								</div>
+								<div class="myorders__content-item">
+									<div class="myorders__item-topRow">
+										<span class="item__topRow-index">Nr. RU181126-984822</span>
+										<span class="item__topRow-sum"><span>10 730</span> руб.</span>
+										<span class="item__topRow-date">26 ноября 2018</span>
+										<span class="item__topRow-status declined">отменен</span>
+									</div>
+									<div class="myorders__item-seller">
+										<span>Продавец - <span>Lamoda</span></span>
+									</div>
+									<div class="myorders__item-bottomRow">
+										<div class="item__bottomRow-wrap">
+											<span><img src="img/popular_carseat.jpg" alt=""></span>
+											<span><img src="img/popular_feedingtable.jpg" alt=""></span>
+											<span><img src="img/popular_umbrella.jpg" alt=""></span>
+											<span><img src="img/popular_stroller-1.jpg" alt=""></span>
+											<span class="overLimit"></span>
+										</div>
+										<a href="#" class="myorders__btn-moreinfo">подробнее о заказе</a>
+									</div>
+								</div>
+								<div class="myorders__content-item">
+									<div class="myorders__item-topRow">
+										<span class="item__topRow-index">Nr. RU181126-984822</span>
+										<span class="item__topRow-sum"><span>10 730</span> руб.</span>
+										<span class="item__topRow-date">26 ноября 2018</span>
+										<span class="item__topRow-status delivered">доставлен</span>
+									</div>
+									<div class="myorders__item-seller">
+										<span>Продавец - <span>Lamoda</span></span>
+									</div>
+									<div class="myorders__item-bottomRow">
+										<div class="item__bottomRow-wrap">
+											<span><img src="img/popular_carseat.jpg" alt=""></span>
+											<span><img src="img/popular_feedingtable.jpg" alt=""></span>
+											<span><img src="img/popular_umbrella.jpg" alt=""></span>
+											<span><img src="img/popular_stroller-1.jpg" alt=""></span>
+											<span class="overLimit">+ 1</span>
+										</div>
+										<a href="#" class="myorders__btn-moreinfo">подробнее о заказе</a>
+									</div>
+								</div>
+								<div class="myorders__content-item">
+									<div class="myorders__item-topRow">
+										<span class="item__topRow-index">Nr. RU181126-984822</span>
+										<span class="item__topRow-sum"><span>10 730</span> руб.</span>
+										<span class="item__topRow-date">26 ноября 2018</span>
+										<span class="item__topRow-status delivered">доставлен</span>
+									</div>
+									<div class="myorders__item-seller">
+										<span>Продавец - <span>Lamoda</span></span>
+									</div>
+									<div class="myorders__item-bottomRow">
+										<div class="item__bottomRow-wrap">
+											<span><img src="img/popular_carseat.jpg" alt=""></span>
+											<span><img src="img/popular_feedingtable.jpg" alt=""></span>
+											<span><img src="img/popular_umbrella.jpg" alt=""></span>
+											<span><img src="img/popular_stroller-1.jpg" alt=""></span>
+											<span class="overLimit">+ 4</span>
+										</div>
+										<a href="#" class="myorders__btn-moreinfo">подробнее о заказе</a>
+									</div>
+								</div>
+								<div class="myorders__content-item">
+									<div class="myorders__item-topRow">
+										<span class="item__topRow-index">Nr. RU181126-984822</span>
+										<span class="item__topRow-sum"><span>10 730</span> руб.</span>
+										<span class="item__topRow-date">26 ноября 2018</span>
+										<span class="item__topRow-status delivered">доставлен</span>
+									</div>
+									<div class="myorders__item-seller">
+										<span>Продавец - <span>Lamoda</span></span>
+									</div>
+									<div class="myorders__item-bottomRow">
+										<div class="item__bottomRow-wrap">
+											<span><img src="img/popular_carseat.jpg" alt=""></span>
+											<span><img src="img/popular_feedingtable.jpg" alt=""></span>
+											<span><img src="img/popular_umbrella.jpg" alt=""></span>
+											<span><img src="img/popular_stroller-1.jpg" alt=""></span>
+											<span class="overLimit">+ 2</span>
+										</div>
+										<a href="#" class="myorders__btn-moreinfo">подробнее о заказе</a>
+									</div>
+								</div>
+								<nav>
+								  <ul class="pagination ">
+								    <li class="page-item"><a class="page-link pagination__arrow-prev" href="#"></a></li>
+								    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+								    <li class="page-item"><a class="page-link" href="#">2</a></li>
+								    <li class="page-item"><a class="page-link" href="#">3</a></li>
+								    <li class="page-item"><a class="page-link pagination__arrow-next" href="#"></a></li>
+								  </ul>
+								</nav>
+					    	</div>
+					    </div>
 					</div>
-				</div>
-				<div class="card">
-					<div class="card__action">12%</div>
-					<img src="img/popular_stroller-1.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Прогулочная коляска Peg Perego Book Cross</h5>
-					    <p class="card-price"><span class="card__price-actual">32 000 р.</span><span class="card__price-prev"></span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="favorites" class="tab-pane fade">
+					    <h3>Menu 1</h3>
+					    <p>Some content in menu 1.</p>
 					</div>
-				</div>
-				<div class="card">
-					<div class="card__action">20%</div>
-					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
-					    <p class="card-price"><span class="card__price-actual">19 350 р.</span><span class="card__price-prev">25 000 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="myData" class="tab-pane fade">
+					    <h3>Menu 2</h3>
+					    <p>Some content in menu 2.</p>
 					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_carseat.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Автокресло Concord Transformer XT Pro</h5>
-					    <p class="card-price"><span class="card__price-actual">23 430 р.</span><span class="card__price-prev"></span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="subscribes" class="tab-pane fade">
+					    <h3>HOME</h3>
+					    <p>Some content.</p>
 					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="faq" class="tab-pane fade">
+					    <h3>Menu 1</h3>
+					    <p>Some content in menu 1.</p>
 					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_stroller-1.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Прогулочная коляска Peg Perego Book Cross</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="relyProgramm" class="tab-pane fade">
+					    <h3>Menu 2</h3>
+					    <p>Some content in menu 2.</p>
 					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
-					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_carseat.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Автокресло Concord Transformer XT Pro</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
-					</div>
-				</div>
-				<div class="card">
-					<img src="img/popular_feedingtable.jpg" class="card-img-top" alt="...">
-					<div class="card-body">
-					    <h5 class="card-title">Стульчик для кормления Peg Perego Prima Pappa Best</h5>
-					    <p class="card-price"><span class="card__price-actual">1 850 р.</span><span class="card__price-prev">2 500 р.</span></p>
-					    <button data-fancybox data-src="#addToBasket" href="javascript:;">в корзину</button>
+					<div id="revoPlus" class="tab-pane fade">
+					    <h3>Menu 2</h3>
+					    <p>Some content in menu 2.</p>
 					</div>
 				</div>
 			</div>
@@ -3362,7 +3432,7 @@
 <script src="libs/aimmenu/jquery.menu-aim.js"></script>
 
 <script src="js/common.js"></script>
-<script src="js/error.js"></script>
+<script src="js/orders.js"></script>
 
 </body>
 </html>

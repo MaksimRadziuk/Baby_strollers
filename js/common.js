@@ -58,13 +58,6 @@ $(document).ready(function(){
 
 //AIMMENU
 
-	/*$(".popup__submenu-item").mouseover(function(){
-		$(this).addClass('active');
-	});
-	$(".popup__submenu-item").mouseleave(function(){
-		$(this).removeClass('active');
-	});*/
-
 
 	var $menu = $(".popup__menu-list");
     $menu.menuAim({
@@ -136,6 +129,8 @@ $(document).ready(function(){
 
 
 
+
+
 });
 
 $(window).on("load", function() {
@@ -175,5 +170,12 @@ $(window).on("load", function() {
 		rewind: true,
     	nav:true,
 		items:4
+	});
+
+	$(".popup__addToBasket-slider").owlCarousel({
+		loop: true,
+		rewind: true,
+    	nav:true,
+		items:3
 	});
 });
