@@ -679,6 +679,286 @@ header.fixed .header__navbar-search>form {
   font-weight: 400;
 }
 
+
+#refundOrder {
+  width: 90%;
+  max-width: 1150px;
+  min-width: 900px;
+  background-color: #fff;
+  display: none;
+}
+#refundOrder form{
+  width: 100%;
+}
+.refund__select-wrap {
+  width: 470px;
+  height: 60px;
+  border-bottom: 2px solid #c4c5c8;
+  background-color: #fff;
+  position: relative;
+  margin: 30px 0;
+}
+.refund__select-wrap select {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border:none;
+  font-size: 17px;
+}
+.refund__select-wrap select:focus {
+  outline:none;
+}
+.refund__select-item {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/arrow_dark.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  transform: rotateZ(90deg);
+  background-color: #fff;
+  z-index: 10;
+  pointer-events: none;
+  cursor: pointer;
+}
+.refund__item-row {
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e9e6e2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.refund__item-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.refund__item-checkbox label{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e9e6e2;
+  cursor: pointer;
+}
+.refund__item-checkbox input:checked + label {
+  background-image: url(../img/checkbox-checked.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.refund__item-img {
+  width: 82px;
+  margin: 0 35px;
+}
+.refund__item-img img {
+  max-width: 100%;
+}
+.refund__item-title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.refund__item-index {
+  font-size: 13px;
+  color: #bdbfc2;
+}
+.refund__item-price {
+  text-align: right;
+  font-size: 15px;
+}
+.refund__instruction-wrap {
+  margin-top: 40px;
+  width: 100%;
+}
+.refund__instruction-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.refund__instruction-olist {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+.refund__instruction-olist li {
+  font-size: 13px;
+}
+.refund__instruction-attention {
+  font-size: 13px;
+  color: #cc958f;
+}
+.refund__instruction-ulist {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  position: relative;
+}
+.refund__instruction-ulist li {
+  font-size: 13px;
+}
+.refund__instruction-ulist li:before {
+  content: '-';
+  color: #3c3f48;
+  position: absolute;
+  left: 0;
+  top:0px;
+}
+.refund__personalData-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.refund__personalData-wrap.half {
+  width: 50%;
+}
+.refund__personalData-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.refund__personalData-methodSelect {
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+  position: relative;
+  border-bottom: 1px solid #e9e6e2;
+}
+.refund__personalData-methodSelect .select-item {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 25px;
+  height: 24px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow_dark.png);
+  background-position: center center;
+  background-color: #fff;
+  transform: rotateZ(90deg);  
+  cursor: pointer;
+  pointer-events: none;
+}
+.refund__personalData-methodSelect select {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border:none;
+}
+.refund__personalData-methodSelect select:focus {
+  outline: none;
+}
+.refund__personalData-wrap input[type="text"],
+.refund__personalData-wrap input[type="number"] {
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+  position: relative;
+  border-bottom: 1px solid #e9e6e2;
+  background-color: transparent;
+}
+.refund__wrap-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.refund__wrap-flex input[type="text"],
+.refund__wrap-flex input[type="number"] {
+  width: 30%;
+}
+#personalStreet {
+  width: 45%;
+}
+#personalHouse {
+  width: 10%;
+}
+#personalDistrict {
+  width: 10%;
+}
+#personalStructure {
+  width: 10%;
+}
+#personalAppartment {
+  width: 10%;
+}
+.refund__personalData-wrap input::-webkit-input-placeholder {
+  color:#bdbfc2;
+}
+.refund__personalData-wrap input::-moz-placeholder          {
+  color:#bdbfc2;
+}/* Firefox 19+ */
+.refund__personalData-wrap input:-moz-placeholder           {
+  color:#bdbfc2;
+}/* Firefox 18- */
+.refund__personalData-wrap input:-ms-input-placeholder      {
+  color:#bdbfc2;
+}
+
+.refund__personalData-wrap input:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+.refund__personalData-wrap input:focus::-moz-placeholder          {
+  color:transparent;
+}/* Firefox 19+ */
+.refund__personalData-wrap input:focus:-moz-placeholder           {
+  color:transparent;
+}/* Firefox 18- */
+.refund__personalData-wrap input:focus:-ms-input-placeholder      {
+  color:transparent;
+}
+.refund__personalData-warning {
+  font-size: 13px;
+}
+.refund__btns-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.refund__btns-wrap button.continue {
+  background-color: #cc958f;
+  color: #fff;
+  margin: 0;
+  margin-right: 60px;
+  padding: 0 40px;
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border:2px solid #cc958f;
+  width: auto;
+  transition: .2s all linear;
+  cursor: pointer;
+}
+.refund__btns-wrap button.abort {
+  background-color: transparent;
+  color: #cc958f;
+  padding: 0 40px;
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border:2px solid #cc958f;
+  margin: 0;
+  width: auto;
+  transition: .2s all linear;
+  cursor: pointer;
+}
+.refund__btns-wrap button.continue:hover {
+  box-shadow: 0 0 10px rgba(229,159,151,.8);
+  transform:scale(1.03);
+}
+.refund__btns-wrap button.abort:hover {
+  box-shadow: 0 0 10px rgba(229,159,151,.8);
+  transform:scale(1.03);
+}
+
+
 /* ===============СТИЛИ МЕНЮ================= */
 .popup__menu {
   position: absolute;
